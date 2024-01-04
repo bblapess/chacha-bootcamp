@@ -10,6 +10,7 @@
     --silver: #C9C9C9;
     --selective-yellow: #FBBC0B;
     --white-lilac: #E8EAF6;
+    --wireframe-bg: #E6E6E6;
 }
 
 * {
@@ -22,27 +23,6 @@
     scroll-behavior: smooth;
 }
 
-header {
-    display: flex;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 9999;
-    position: fixed;
-    padding: 4rem 7rem;
-    max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
-    background-color: aqua;
-}
-
 .container {
     display: flex;
     max-width: 1440px;
@@ -50,19 +30,6 @@ header {
     margin-left: auto;
     margin-right: auto;
     flex-direction: column;
-}
-
-.navbar .navbar-menu {
-    display: flex;
-    align-items: flex-start;
-    gap: 27px;
-}
-
-.navbar .navbar-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
 }
 
 h1 {
@@ -94,7 +61,96 @@ h5 {
     font-size: 1.25rem;
     font-weight: 400;
     line-height: 160%;
-    letter-spacing: -0.03125rem;
+}
+
+/* Navbar */
+
+header {
+    display: flex;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    position: fixed;
+    padding: 4rem 7rem 0 7rem;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+.navbar .navbar-menu {
+    display: flex;
+    align-items: flex-start;
+    gap: 27px;
+}
+
+.navbar-item {
+    color: var(--bronze);
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-decoration: none;
+
+    transition: color 0.3s ease-in-out;
+}
+
+.navbar-item::after {
+    content: "";
+    width: 0px;
+    height: 4px;
+    background: var(--crusta);
+    border-radius: 8px;
+    display: block;
+    opacity: 0;
+    margin: 0 auto;
+
+    transition: opacity 0.3s ease-in-out, width 0.3s ease-in-out;
+}
+
+.navbar-item:hover::after,
+.navbar-item:focus::after {
+    width: 20px;
+    opacity: 1;
+}
+
+.navbar .navbar-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.navbar-button .button-daftar {
+    display: flex;
+    padding: 8px 22px;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+
+    background-color: var(--selective-yellow);
+    color: var(--wireframe-bg);
+
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    border-radius: 25px;
+}
+
+/* HeroPage */
+
+#heroPage .container {
+    gap: 4rem;
+    margin-top: 7.25rem;
 }
 
 .title-text {
@@ -111,6 +167,30 @@ h5 {
     width: 54rem;
 }
 
+.button-gambar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.button-daftar {
+    display: flex;
+    padding: 1rem 2.5rem;
+    justify-content: center;
+    align-items: center;
+    gap: 0.625rem;
+    border-radius: 2.5rem;
+    background: var(--crusta);
+    color: var(--wireframe-bg);
+    border: none;
+
+    font-size: 1.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+/* Benefit */
 .benefit {
     width: 100%;
     display: flex;
@@ -123,6 +203,25 @@ h5 {
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5rem;
+}
+
+.benefit-title .title {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 1.5rem;
+    align-self: stretch;
+}
+
+.benefit-section-title {
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    letter-spacing: 0.25rem;
+    text-transform: uppercase;
+
+    color: var(--crusta);
 }
 
 .benefit-title h3 {
@@ -141,4 +240,108 @@ h5 {
     align-items: flex-start;
     gap: 1.5rem;
     flex-shrink: 0;
+}
+
+/* Penawaran */
+
+.penawaran {
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+}
+
+.penawaran-header {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.penawaran-title {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+}
+
+.button-see-all {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+    color: var(--crusta);
+
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.button-see-all::after {
+    content: '';
+    color: var(--selective-yellow);
+}
+
+.mata-pembelajaran {
+    display: flex;
+    align-items: flex-start;
+    align-content: flex-start;
+    gap: 1.25rem;
+    flex-shrink: 0;
+    flex-wrap: wrap;
+}
+
+.card-mapel {
+    max-width: 387px;
+    display: flex;
+    padding: 1.5rem;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2rem;
+
+    border-radius: 2rem;
+    border: 2px solid var(--crusta);
+    background: var(--selective-yellow);
+}
+
+.card-mapel-body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    align-self: stretch;
+}
+
+.card-mapel-title {
+    color: var(--bronze);
+}
+
+.card-mapel-body .harga {
+    color: var(--bronze);
+
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+
+    text-align: center;
+    margin: auto;
+}
+
+.button-detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    align-self: stretch;
+}
+
+.button-detail-item {
+    color: var(--crusta);
+
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
