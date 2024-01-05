@@ -11,6 +11,8 @@
     --selective-yellow: #FBBC0B;
     --white-lilac: #E8EAF6;
     --wireframe-bg: #E6E6E6;
+    --logo-primary: #FE9343;
+    --logo-secondary: #FFC16A;
 }
 
 * {
@@ -369,8 +371,6 @@ footer {
     align-items: flex-start;
     gap: 1rem;
 }
-
-
 
 .footer-section-title .footer-content-item {
     align-items: flex-start;
