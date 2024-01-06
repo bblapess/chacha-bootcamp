@@ -7,22 +7,28 @@
     <title>Chacha Bootcamp</title>
 
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
     <header>
         <nav class="navbar">
             <img src="assets/img/logo.png" alt="Logo">
-            <ul class="navbar-menu">
+            <ul class="navbar-menu" id="navMenu">
                 <li><a href="#top" class="navbar-item">Tentang</a></li>
                 <li><a href="#about" class="navbar-item">Penawaran</a></li>
                 <li><a href="#contact" class="navbar-item">Informasi</a></li>
                 <li><a href="#contact" class="navbar-item">Kontak</a></li>
             </ul>
-            <ul class="navbar-button">
+            <ul class="navbar-button" id="navButton">
                 <li><a href="#top" class="navbar-item">Masuk</a></li>
                 <li><a href="#about" class="button-daftar">Daftar</a></li>
             </ul>
+            <div class="navbar-hamburger" id="hamburger">
+                <a href="#" id="menu"><i class="fas fa-bars"></i></a>
+            </div>
         </nav>
     </header>
 
@@ -55,20 +61,22 @@
                     </div>
                     <p class="text">Cobalah berbagai keuntungan saat menggunakan layanan kami.</p>
                 </div>
-                <div class="benefit-item">
-                    <img src="assets/img/mengisi-waktu.png" alt="Mengisi Waktu">
-                    <h3>Mengisi Waktu</h3>
-                    <p class="text">Mengisi waktu akhir pekan dengan produktif.</p>
-                </div>
-                <div class="benefit-item">
-                    <img src="assets/img/eksplorasi.png" alt="Eksplorasi">
-                    <h3>Eksplorasi</h3>
-                    <p class="text">Eksplorasi minat baru yang terkini untuk anak.</p>
-                </div>
-                <div class="benefit-item">
-                    <img src="assets/img/e-sertifikat.png" alt="E-sertifikat">
-                    <h3>E-sertifikat</h3>
-                    <p class="text">E-sertifikat setelah menyelesaikan kelas.</p>
+                <div class="benefit-section">
+                    <div class="benefit-item">
+                        <img src="assets/img/mengisi-waktu.png" alt="Mengisi Waktu">
+                        <h3>Mengisi Waktu</h3>
+                        <p class="text">Mengisi waktu akhir pekan dengan produktif.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <img src="assets/img/eksplorasi.png" alt="Eksplorasi">
+                        <h3>Eksplorasi</h3>
+                        <p class="text">Eksplorasi minat baru yang terkini untuk anak.</p>
+                    </div>
+                    <div class="benefit-item">
+                        <img src="assets/img/e-sertifikat.png" alt="E-sertifikat">
+                        <h3>E-sertifikat</h3>
+                        <p class="text">E-sertifikat setelah menyelesaikan kelas.</p>
+                    </div>
                 </div>
             </div>
         </div>
@@ -181,5 +189,6 @@
         </div>
     </footer>
 </body>
+<script src="/assets/js/script.js"></script>
 
 </html>

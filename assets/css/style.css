@@ -28,7 +28,7 @@
 .container {
     display: flex;
     max-width: 1440px;
-    padding: 4rem 7rem 4rem 7rem;
+    padding: 4rem 7rem;
     margin-left: auto;
     margin-right: auto;
     flex-direction: column;
@@ -67,24 +67,23 @@ h5 {
 
 /* Navbar */
 
-header {
-    display: flex;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 9999;
-    position: fixed;
-    padding: 4rem 7rem 0 7rem;
-    max-width: 1440px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
 .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    position: fixed;
+    padding: 4rem 7rem;
+    max-width: 1440px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: white;
+
+    transition: padding 0.3s ease-in-out;
 }
 
 .navbar .navbar-menu {
@@ -135,7 +134,6 @@ header {
     padding: 8px 22px;
     justify-content: center;
     align-items: center;
-    flex-shrink: 0;
 
     background-color: var(--selective-yellow);
     color: var(--wireframe-bg);
@@ -146,6 +144,15 @@ header {
     line-height: normal;
 
     border-radius: 25px;
+}
+
+.navbar-hamburger {
+    display: none;
+}
+
+.navbar-hamburger a {
+    color: var(--bronze);
+    font-size: 1.25rem;
 }
 
 /* HeroPage */
@@ -162,12 +169,12 @@ header {
 }
 
 .title-text h1 {
-    width: 41rem;
+    width: 55%;
     color: var(--bronze);
 }
 
 .title-text h4 {
-    width: 54rem;
+    width: 100%;
     color: var(--black);
 }
 
@@ -236,15 +243,19 @@ header {
     line-height: normal;
 }
 
+.benefit-section {
+    display: flex;
+    gap: 1.5rem;
+    align-items: flex-start;
+}
+
 .benefit-item {
-    width: 17.875rem;
     display: flex;
     padding: 0rem 1.5rem;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
     gap: 1.5rem;
-    flex-shrink: 0;
 }
 
 /* Penawaran */
@@ -296,11 +307,10 @@ header {
     gap: 1.25rem;
     flex-shrink: 0;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .card-mapel {
-    max-width: 387px;
     display: flex;
     padding: 1.5rem;
     flex-direction: column;
@@ -408,4 +418,446 @@ footer {
 
     background: var(--bronze);
     color: white;
+}
+
+@media screen and (max-width: 1024px) {
+    h1 {
+        font-size: calc(3.5rem * 0.9);
+        font-weight: 700;
+    }
+
+    h2 {
+        font-size: calc(2.188rem * 0.9);
+        font-weight: 700;
+    }
+
+    h3 {
+        font-size: calc(1.625rem * 0.9);
+        font-weight: 600;
+    }
+
+    h4 {
+        font-size: calc(1rem * 0.9);
+        font-weight: 500;
+    }
+
+    h5 {
+        font-size: calc(0.75rem * 0.9);
+        font-weight: 400;
+    }
+
+    .text {
+        font-size: calc(1.25rem * 0.9);
+    }
+
+    .container {
+        padding: 4rem 4rem;
+    }
+
+    /* Navbar Responsive */
+    .navbar-hamburger {
+        display: inline-block;
+    }
+
+    .navbar {
+        padding: 1rem 4rem;
+    }
+
+    .navbar-item,
+    .navbar-button .button-daftar {
+        font-size: calc(1.25rem * 0.9);
+    }
+
+    .navbar .navbar-menu {
+        display: none;
+        flex-direction: column;
+        width: 33%;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        z-index: -1;
+        gap: 1rem;
+        padding: 1rem 4rem 1rem 0;
+        align-items: flex-end;
+        animation-name: slideLeft;
+        animation-duration: 0.5s;
+        background-color: white;
+        box-shadow: #dfdfdf 2px 17px 6px 0px;
+    }
+
+    .navbar .navbar-button {
+        display: none;
+        flex-direction: column;
+        width: 33%;
+        position: absolute;
+        top: 323%;
+        right: 0;
+        z-index: -1;
+        gap: 1rem;
+        padding: 1rem 4rem 1rem 0;
+        align-items: flex-end;
+        animation-name: slideLeft;
+        animation-duration: 0.5s;
+        background-color: white;
+        height: 100vh;
+        justify-content: flex-start;
+        box-shadow: #dfdfdf 2px 17px 6px 0px;
+    }
+
+    .navbar-item:hover::after,
+    .navbar-item:focus::after {
+        opacity: 0;
+    }
+
+    @keyframes slideLeft {
+        from {
+            position: absolute;
+            right: -50%;
+            z-index: -2;
+        }
+
+        to {
+            position: absolute;
+            right: 0;
+            z-index: -2;
+        }
+    }
+
+    @keyframes slideRight {
+        from {
+            position: absolute;
+            right: 0;
+            z-index: -2;
+        }
+
+        to {
+            position: absolute;
+            right: -50%;
+            z-index: -2;
+        }
+    }
+
+    /* HeroPage */
+
+    #heroPage .container {
+        margin-top: 84px;
+        gap: 2rem;
+    }
+
+    .title-text h1 {
+        width: 100%;
+    }
+
+    .button-gambar img {
+        max-width: 450px;
+    }
+
+    .button-gambar a {
+        font-size: calc(1.875rem * 0.75);
+    }
+
+    /* Benefit */
+    .container .benefit {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .benefit-item {
+        align-items: center;
+    }
+
+    .benefit-title .title {
+        align-items: center;
+    }
+
+    .benefit-title h3 {
+        font-size: calc(1.625rem * 0.9);
+    }
+
+    .benefit-item img {
+        width: calc(74px * 0.75);
+    }
+
+    .benefit-title img {
+        width: calc(35px * 0.9)
+    }
+
+    /* Penawaran */
+    .button-see-all {
+        font-size: calc(1.875rem * 0.8);
+    }
+
+    .button-see-all img {
+        max-width: 18px;
+    }
+
+    .mata-pembelajaran {
+        justify-content: center;
+    }
+
+    .card-mapel {
+        gap: 1rem;
+        padding: 1rem;
+    }
+
+    .card-mapel img {
+        max-width: 217px;
+    }
+
+    .card-mapel-body {
+        width: 100%;
+    }
+
+    .card-mapel-body h2 {
+        font-size: 22px;
+    }
+
+    .card-mapel-body .text {
+        font-size: 12px;
+    }
+
+    .card-mapel-body .harga {
+        font-size: calc(25px * 0.75);
+    }
+
+    .button-detail img {
+        max-height: 18px;
+    }
+
+    .button-detail-item {
+        font-size: calc(1.5rem * 0.75);
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: calc(3.5rem * 0.75);
+        font-weight: 700;
+    }
+
+    h2 {
+        font-size: calc(2.188rem * 0.75);
+        font-weight: 700;
+    }
+
+    h3 {
+        font-size: calc(1.625rem * 0.75);
+        font-weight: 600;
+    }
+
+    h5 {
+        font-size: calc(0.75rem * 0.75);
+        font-weight: 400;
+    }
+
+    .container {
+        padding: 2rem 3rem;
+    }
+
+    /* Navbar */
+    .navbar {
+        padding: 1rem 3rem;
+    }
+
+    .navbar .navbar-menu,
+    .navbar .navbar-button {
+        padding: 1rem 3rem 1rem 0;
+        width: 28%;
+    }
+
+    .navbar .navbar-button {
+        top: 312%;
+    }
+
+    .navbar-item,
+    .navbar-button .button-daftar {
+        font-size: calc(1.25rem * 0.7);
+    }
+
+    /* HeroPage */
+    #heroPage .container {
+        margin-top: 84px;
+    }
+
+    .title-text {
+        text-align: center;
+    }
+
+    .button-gambar {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .button-gambar img {
+        max-width: 100%;
+    }
+
+    /* Benefit */
+
+    .benefit-title img {
+        width: calc(35px * 0.75)
+    }
+
+    /* Penawaran */
+    .penawaran {
+        gap: 3rem;
+    }
+
+    .penawaran-header {
+        flex-wrap: wrap;
+    }
+
+    /* Footer */
+    .footer-content-section {
+        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section-title {
+        align-items: center;
+        text-align: center;
+    }
+
+    .footer-content {
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 428px) {
+    h1 {
+        font-size: calc(3.5rem * 0.5);
+        font-weight: 700;
+    }
+
+    h2 {
+        font-size: calc(2.188rem * 0.65);
+        font-weight: 700;
+    }
+
+    h3 {
+        font-size: calc(1.625rem * 0.7);
+        font-weight: 600;
+    }
+
+    .text {
+        font-size: calc(1.25rem * 0.7);
+    }
+
+    .container {
+        padding: 1rem 2rem;
+    }
+
+    /* Navbar */
+    .navbar {
+        padding: 1rem 2rem;
+    }
+
+    .navbar img {
+        max-width: 60px;
+    }
+
+    .navbar .navbar-menu,
+    .navbar .navbar-button {
+        padding: 1rem 2rem 1rem 0;
+        width: 35%;
+    }
+
+    .navbar .navbar-button {
+        top: 350%;
+    }
+
+    /* HeroPage */
+    .button-gambar {
+        gap: 2rem;
+    }
+
+    .button-gambar a {
+        font-size: calc(1.875rem * 0.6);
+    }
+
+    .benefit-section-title {
+        font-size: 18px;
+    }
+
+    /* Benefit */
+    .benefit-title .title {
+        gap: 1rem;
+    }
+
+    .benefit-title h3 {
+        font-size: calc(1.625rem * 0.7);
+    }
+
+    .benefit-section {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .benefit-item {
+        gap: 0.5rem;
+    }
+
+    .benefit-title img {
+        width: calc(35px * 0.55)
+    }
+
+    /* Penawaran */
+    .penawaran {
+        gap: 2rem;
+    }
+
+    .penawaran-header {
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .penawaran-title {
+        align-items: center;
+        text-align: center;
+    }
+
+    /* Footer */
+    .footer-section-title .footer-content-item img {
+        display: none;
+    }
+
+    .footer-content-section {
+        gap: 1rem;
+    }
+
+    .footer-content-section .footer-content-item img,
+    .footer-sosmed img {
+        max-width: 32px;
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        padding: 1rem 1.5rem;
+    }
+
+    /* Navbar */
+    .navbar {
+        padding: 1rem 1.5rem;
+    }
+
+    .navbar .navbar-menu,
+    .navbar .navbar-button {
+        padding: 1rem 1.5rem 1rem 0;
+        width: 35%;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .navbar .navbar-menu,
+    .navbar .navbar-button {
+        padding: 1rem 1.5rem 1rem 0;
+        width: 40%;
+    }
 }
