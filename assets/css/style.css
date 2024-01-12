@@ -67,21 +67,29 @@ h5 {
 
 /* Navbar */
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+header {
     width: 100%;
-    top: 0;
+    top: 0; 
     left: 0;
     right: 0;
     z-index: 9999;
     position: fixed;
+    background: transparent;
+    transition: background 0.3s ease;
+}
+  
+header.scrolled {
+    background: #fff;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 4rem 7rem;
     max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
-    background-color: white;
 
     transition: padding 0.3s ease-in-out;
 }
@@ -159,13 +167,13 @@ h5 {
 
 #heroPage .container {
     gap: 4rem;
-    margin-top: 7.25rem;
 }
 
 .title-text {
     display: flex;
     flex-direction: column;
     gap: 1.25rem;
+    margin-top: 7.25rem;
 }
 
 .title-text h1 {
@@ -418,6 +426,19 @@ footer {
 
     background: var(--bronze);
     color: white;
+}
+
+#heroPage {
+    background-image: url("../img/bg/bg-hero.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#benefit {
+    background-image: url("../img/bg/bg-benefit.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 @media screen and (max-width: 1024px) {
