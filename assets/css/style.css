@@ -69,7 +69,7 @@ h5 {
 
 header {
     width: 100%;
-    top: 0; 
+    top: 0;
     left: 0;
     right: 0;
     z-index: 9999;
@@ -77,7 +77,7 @@ header {
     background: transparent;
     transition: background 0.3s ease;
 }
-  
+
 header.scrolled {
     background: #fff;
 }
@@ -434,10 +434,18 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
 }
+
 #benefit {
     background-image: url("../img/bg/bg-benefit.png");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+}
+
+#penawaran {
+    background-image: url("../img/bg/bg-penawaran.png");
+    background-size: cover;
+    background-position: top;
     background-repeat: no-repeat;
 }
 
@@ -881,4 +889,193 @@ footer {
         padding: 1rem 1.5rem 1rem 0;
         width: 40%;
     }
+}
+
+/* page Daftar */
+
+#login-daftar {
+    background-image: url("../img/bg/bg-login-daftar.png");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+}
+
+.container-login-daftar {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    padding: 8rem 16rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.card-login-daftar {
+    display: flex;
+    width: 100%;
+    background-color: #FFFBF9;
+    justify-content: center;
+    flex-direction: column;
+    padding: 4rem 8rem;
+    gap: 2rem;
+}
+
+.card-login-daftar .card-header {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-login-daftar .card-header h1 {
+    color: var(--bronze);
+
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.card-login-daftar .card-header h3 {
+    color: var(--bronze);
+
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.card-login-daftar .form {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.card-login-daftar .form .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    width: 100%;
+}
+
+.form-group label {
+    color: var(--black);
+
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+label.required::after {
+    content: "*";
+    color: red;
+}
+
+.form-group input {
+    height: 48px;
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid var(--crusta);
+    padding: 0 1rem;
+}
+
+/* #togglePassword {
+    cursor: pointer;
+    float: right;
+    margin-left: -25px;
+    margin-top: -25px;
+    position: relative;
+    z-index: 2;
+} */
+
+.form .additional {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.additional .form-checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    flex-shrink: 0;
+}
+
+.form-checkbox input[type="checkbox"] {
+    appearance: none;
+    -webkit-appearance: none;
+    display: flex;
+    align-content: center;
+    justify-content: center;
+    font-size: 1rem;
+    border: 2px solid var(--silver);
+    border-radius: 0.25rem;
+}
+
+.form-checkbox input[type="checkbox"]::before {
+    content: "";
+    width: 1rem;
+    height: 1rem;
+    clip-path: polygon(28.81% 44.91%, 42.89% 58.63%, 76.36% 24.28%, 84.73% 32.44%, 42.89% 75.37%, 20.44% 53.49%);
+    transform: scale(0);
+    background-color: var(--silver);
+}
+
+.form-checkbox input[type="checkbox"]:checked::before {
+    transform: scale(1);
+}
+
+.form-checkbox input[type="checkbox"]:hover {
+    color: black;
+}
+
+.form-button {
+    width: 388px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.form-button .button-login {
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    padding: 1rem 3rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    background-color: var(--crusta);
+    border: none;
+
+    color: var(--wireframe-bg);
+
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.form-button .button-daftar {
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    padding: 1rem 3rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    border: 2px solid var(--crusta);
+    background-color: transparent;
+
+    color: var(--crusta);
+
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
 }
