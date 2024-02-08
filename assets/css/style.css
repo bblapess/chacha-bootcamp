@@ -322,12 +322,18 @@ header.scrolled {
     display: flex;
     padding: 1.5rem;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     gap: 2rem;
+
+    width: 100%;
 
     border-radius: 2rem;
     border: 2px solid var(--crusta);
     background: var(--selective-yellow);
+}
+
+.mata-pembelajaran .card-mapel {
+    max-width: 392px;
 }
 
 .card-mapel-body {
@@ -631,9 +637,9 @@ footer {
         padding: 1rem;
     }
 
-    .card-mapel img {
+    /* .card-mapel img {
         max-width: 217px;
-    }
+    } */
 
     .card-mapel-body {
         width: 100%;
@@ -909,7 +915,7 @@ footer {
     margin-right: auto;
 }
 
-.card-login-daftar {
+.card-login {
     display: flex;
     width: 100%;
     background-color: #FFFBF9;
@@ -919,14 +925,14 @@ footer {
     gap: 2rem;
 }
 
-.card-login-daftar .card-header {
+.card-login .card-header {
     display: inline-flex;
     flex-direction: column;
     align-items: center;
     gap: 10px;
 }
 
-.card-login-daftar .card-header h1 {
+.card-login .card-header h1 {
     color: var(--bronze);
 
     font-size: 56px;
@@ -935,7 +941,7 @@ footer {
     line-height: normal;
 }
 
-.card-login-daftar .card-header h3 {
+.card-login .card-header h3 {
     color: var(--bronze);
 
     font-size: 26px;
@@ -944,7 +950,7 @@ footer {
     line-height: normal;
 }
 
-.card-login-daftar .form {
+.card-login .form {
     display: inline-flex;
     flex-direction: column;
     justify-content: center;
@@ -952,12 +958,127 @@ footer {
     gap: 1.5rem;
 }
 
-.card-login-daftar .form .form-group {
+.card-login .form .form-group {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 0.5rem;
     width: 100%;
+    position: relative;
+}
+
+.card-daftar {
+    background-color: #ffefdb;
+    border-radius: 1.5rem;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+}
+
+.card-daftar-image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 8rem 0;
+}
+
+.card-daftar-image .logo {
+    width: 168px;
+    height: auto;
+    margin-left: 8rem;
+}
+
+.card-daftar-image .illustration {
+    position: absolute;
+    top: 35%;
+    left: 0%;
+    width: 490px;
+    height: auto;
+}
+
+.card-daftar-form {
+    display: flex;
+    width: 70%;
+    justify-content: center;
+    flex-direction: column;
+    padding: 4rem 8rem;
+    gap: 2rem;
+    background-image: url("../img/bg/bg-3.png");
+    border-radius: 1.5rem;
+}
+
+.card-daftar-form .card-header {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.card-daftar-form .card-header h1 {
+    color: var(--bronze);
+
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.card-daftar-form .form {
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.card-daftar-form .form .form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+    width: 100%;
+    position: relative;
+}
+
+.card-daftar-form .form .button-daftar {
+    cursor: pointer;
+    width: 100%;
+    display: flex;
+    padding: 0.75rem 0.75rem;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2rem;
+    background-color: var(--crusta);
+    border: none;
+
+    color: var(--wireframe-bg);
+
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.card-daftar-form .form .form-group label {
+    color: var(--black);
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    letter-spacing: 0.4px;
+}
+
+.login-with {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.platform-login {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
 }
 
 .form-group label {
@@ -980,16 +1101,24 @@ label.required::after {
     border-radius: 8px;
     border: 1px solid var(--crusta);
     padding: 0 1rem;
+    background-color: transparent;
 }
 
-/* #togglePassword {
+.form-group #togglePassword {
+    position: absolute;
+    top: 75%;
+    left: 96%;
     cursor: pointer;
-    float: right;
-    margin-left: -25px;
-    margin-top: -25px;
-    position: relative;
-    z-index: 2;
-} */
+    transform: translateY(-50%);
+}
+
+.form-group #toggleConfirmPassword {
+    position: absolute;
+    top: 75%;
+    left: 96%;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
 
 .form .additional {
     width: 100%;
@@ -1078,4 +1207,632 @@ label.required::after {
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+}
+
+/* Page Menu Pembelajaran */
+
+#pageMenu {
+    background-image: url("../img/bg/bg-3.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#pageMenu .container {
+    gap: 1rem;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 1.5rem;
+}
+
+@media screen and (max-width: 320px) {
+    .grid {
+        grid-template-columns: repeat(auto-fill, minmax(265px, 1fr));
+    }
+}
+
+.card-mapel .card-mapel-image img {
+    width: 100%;
+}
+
+.page-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+}
+
+#pageMateri .page-header,
+#isiMateri .page-header {
+    align-items: center !important;
+}
+
+.page-header-body {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.page-title {
+    color: var(--bronze);
+
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.profile-icon {
+    width: 85px;
+    height: 85px;
+    align-items: center;
+    display: flex;
+}
+
+/* Page Pemilihan Kelas */
+
+#pagePemilihan {
+    background-image: url("../img/bg/bg-3.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#pagePemilihan .container {
+    gap: 1rem;
+}
+
+.card-kelas {
+    display: flex;
+    padding: 1.5rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    border-radius: 24px;
+    border: 2px solid var(--crusta);
+    background: var(--selective-yellow);
+}
+
+.card-kelas-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.card-kelas-content h2 {
+    color: var(--bronze);
+
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.card-kelas-content p {
+    color: var(--bronze);
+
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* Page Detail Kelas */
+
+#pageDetailKelas {
+    background-image: url("../img/bg/bg-3.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#pageDetailKelas .container {
+    gap: 1rem;
+}
+
+img.card-detail-image {
+    width: 100%;
+}
+
+.class-detail-body {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.class-detail-content {
+    color: var(--bronze);
+
+    display: flex;
+    gap: 1.5rem;
+    padding-top: 0.5rem;
+    flex-direction: column;
+}
+
+.class-detail-info h4 {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+
+.class-detail-info li {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    letter-spacing: -0.5px;
+}
+
+.detail-kelas-button {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+}
+
+/* Page Transaksi */
+
+#pageTransaksi {
+    background-image: url("../img/bg/bg-3.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+#pageTransaksi .container {
+    gap: 1.75rem;
+}
+
+.detail-transaksi {
+    border: 2px solid var(--bronze);
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+table {
+    width: 100%;
+}
+
+table td {
+    width: auto;
+
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.payment {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-bank {
+    cursor: pointer;
+    display: flex;
+    padding: 0.75rem 1rem;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    border-radius: 20px;
+    background: var(--crusta);
+    border: none;
+
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--wireframe-bg);
+}
+
+.bank {
+    width: 100%;
+    display: none;
+    gap: 1.5rem;
+    flex-direction: column;
+}
+
+.bank-item {
+    display: flex;
+    padding: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+
+    border: 1px solid;
+}
+
+.bank-item-brand {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
+.bayar {
+    display: none;
+    justify-content: center;
+}
+
+.button-large {
+    display: flex;
+    padding: 1.5rem 2rem;
+    justify-content: center;
+    align-items: center;
+
+    border-radius: 40px;
+    background: var(--crusta);
+    border: none;
+
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    color: var(--wireframe-bg);
+}
+
+.bank-item-radio {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.bank-item-radio input[type="radio"] {
+    display: flex;
+    width: 20px;
+    height: 20px;
+    padding: 2px;
+    align-items: flex-start;
+    border: 2px solid;
+    border-radius: 50%;
+    background-color: transparent;
+
+    appearance: none;
+}
+
+.bank-item-radio input[type="radio"]::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: transparent;
+    transition: 120ms background-color ease-in-out;
+}
+
+.bank-item-radio input[type="radio"]:checked::before {
+    background-color: #000000;
+}
+
+.bank-item-radio h4 {
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+/* Page Pembelajaran Aktif */
+
+#pagePembelajaran {
+    background-image: url("../img/bg/bg-3.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100%;
+}
+
+#pagePembelajaran .container {
+    gap: 1.5rem;
+}
+
+.class-detail-content {
+    padding-top: 0 !important;
+}
+
+.page-nav {
+    display: flex;
+    gap: 3rem;
+}
+
+.page-nav .page-nav-item {
+    color: var(--bronze);
+
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+.page-nav-item::after {
+    content: "";
+    width: 0px;
+    height: 8px;
+    background: var(--selective-yellow);
+    border-radius: 12px;
+    display: block;
+    opacity: 0;
+    margin: 0 auto;
+
+    transition: opacity 0.3s ease-in-out;
+}
+
+.page-nav-item:hover::after,
+.page-nav-item:focus::after {
+    width: 100%;
+    opacity: 1;
+}
+
+.page-nav-item.active::after {
+    width: 100%;
+    opacity: 1;
+}
+
+.d-none {
+    display: none !important;
+}
+
+.class-detail {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.learning-history {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.card-learn-history {
+    display: flex;
+    padding: 1.5rem;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+
+    border-radius: 2rem;
+    background: var(--selective-yellow);
+}
+
+.card-learn-history-body {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.card-learn-history-content {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+
+    color: var(--bronze);
+}
+
+.card-learn-history-content h2 {
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.card-learn-history-content p {
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 32px */
+    letter-spacing: -0.5px;
+}
+
+/* Page Materi Pembelajaran */
+
+#pageMateri {
+    background-image: url("../img/bg/bg-3.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#pageMateri .container {
+    gap: 1rem;
+}
+
+.materi {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.materi a {
+    color: #000000;
+}
+
+.materi-item {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    border: 1px solid;
+}
+
+.materi-item-body {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+}
+
+.materi-item-content {
+    display: flex;
+    flex-direction: column;
+
+    color: var(--bronze);
+}
+
+/* Page Isi Materi */
+
+#isiMateri {
+    background-image: url("../img/bg/bg-3.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#isiMateri .container {
+    gap: 1.5rem;
+}
+
+.isi-materi-header {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.isi-materi-header-info {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.isi-materi-header-info .info-img {
+    width: 76px;
+    height: auto;
+}
+
+.isi-materi-img {
+    border-radius: 1rem;
+    border: 1px solid var(--crusta)
+}
+
+.next-bab {
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 10rem;
+}
+
+.card-next-bab {
+    width: 240px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    background: var(--logo-secondary);
+    color: var(--bronze);
+    overflow: hidden;
+
+    text-align: center;
+
+    border-radius: 1rem;
+}
+
+.card-next-bab img {
+    height: 162px;
+    width: auto;
+    object-fit: cover;
+}
+
+div.ujian {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 2.5rem 0;
+}
+
+.ujian {
+    background-image: url("../img/bg/bg-3.png");
+    background-attachment: fixed;
+    background-position: bottom;
+
+    display: flex;
+    justify-content: center;
+    bottom: 0;
+}
+
+a.back {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+
+    color: #000000;
+}
+
+a.back img {
+    rotate: 180deg;
+    height: 1.5rem;
+    width: auto;
+}
+
+#pageEvaluasiPembelajaran {
+    background-image: url("../img/bg/bg-3.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+#pageEvaluasiPembelajaran .container {
+    gap: 1rem;
+}
+
+.evaluasi-header {
+    color: var(--logo-primary);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.evaluasi-header h3 {
+    color: var(--bronze)
+}
+
+.evaluasi-img {
+    width: 100%;
+}
+
+.evaluasi-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+
+    color: var(--bronze)
+}
+
+.mulai-ujian {
+    display: flex;
+    justify-content: center;
 }

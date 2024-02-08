@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pembelajaran Aktif - Chacha Bootcamp</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section id="pagePembelajaran">
+        <div class="container">
+            <div class="page-header">
+                <h2 class="page-title">Pembelajaran Aktif</h2>
+                <a href="#"><img src="assets/img/icon/profile.svg" alt="Profile" class="profile-icon"></a>
+            </div>
+            <div class="page-nav">
+                <a href="#" class="page-nav-item active" id="kegiatanAktif">Kegiatan Aktif</a>
+                <a href="#" class="page-nav-item" id="riwayatPembalajaran">Riwayat Pembelajaran</a>
+            </div>
+            <div class="class-detail" id="classActive">
+                <img src="assets/img/detail-kelas.png" alt="Detail Kelas" class="detail-kelas-img">
+                <div class="class-detail-body">
+                    <div class="class-detail-content">
+                        <h2>Matematika Kelas 6 SD</h2>
+                        <div class="class-detail-info">
+                            <h4>Isi Materi :</h4>
+                            <ul>
+                                <li>Pecahan dan Desimal (Perkalian dan Pembagian Pecahan; Bilangan Desimal)</li>
+                                <li>Rasio (Konsep Rasio; Konsep Kesamaan Rasio; Penerapan Rasio)</li>
+                                <li>Kubus dan Balok (Mengonstruksi dan Mengurai; Visualisasi Spasial; Lokasi)</li>
+                                <li>Peluang (Skala Peluang; Membandingkan Peluang Kejadian)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <a href="materi-pembelajaran.html"><img src="assets/img/icon/icon-right-bold.svg"
+                            alt="Icon Right"></a>
+                </div>
+            </div>
+            <div class="learning-history d-none" id="learnHistory">
+                <div class="card-learn-history">
+                    <img src="assets/img/history-matematika.png" alt="History Matematika">
+                    <div class="card-learn-history-body">
+                        <div class="card-learn-history-content">
+                            <h2>Matematika</h2>
+                            <p>Pembelajaran Matematika</p>
+                        </div>
+                        <img src="assets/img/icon/icon-right-bold.svg" alt="Icon Right">
+                    </div>
+                </div>
+                <div class="card-learn-history">
+                    <img src="assets/img/history-bindo.png" alt="History Matematika">
+                    <div class="card-learn-history-body">
+                        <div class="card-learn-history-content">
+                            <h2>Bahasa Indonesia</h2>
+                            <p>Pembelajaran Bahasa Indonesia</p>
+                        </div>
+                        <img src="assets/img/icon/icon-right-bold.svg" alt="Icon Right">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        // Mendapatkan referensi ke elemen-elemen yang diperlukan
+        var riwayatPembelajaran = document.getElementById("riwayatPembalajaran");
+        var learnHistory = document.getElementById("learnHistory");
+        var kegiatanAktif = document.getElementById("kegiatanAktif");
+        var classActive = document.getElementById("classActive");
+
+        // Menambahkan event listener untuk klik pada tautan "Riwayat Pembelajaran"
+        riwayatPembelajaran.addEventListener("click", function (event) {
+            event.preventDefault(); // Menghentikan perilaku default dari tautan
+
+            // Menambahkan kelas active pada tautan "Riwayat Pembelajaran" dan menghapus dari tautan "Kegiatan Aktif"
+            riwayatPembelajaran.classList.add("active");
+            kegiatanAktif.classList.remove("active");
+
+            // Menghilangkan kelas d-none dari elemen "learnHistory"
+            learnHistory.classList.remove("d-none");
+            classActive.classList.add("d-none");
+        });
+
+        kegiatanAktif.addEventListener("click", function (event) {
+            event.preventDefault(); // Menghentikan perilaku default dari tautan
+
+            // Menambahkan kelas active pada tautan "Kegiatan Aktif" dan menghapus dari tautan "Riwayat Pembelajaran"
+            kegiatanAktif.classList.add("active");
+            riwayatPembelajaran.classList.remove("active");
+
+            // Menghilangkan kelas d-none dari elemen "classActive"
+            classActive.classList.remove("d-none");
+            learnHistory.classList.add("d-none");
+        });
+    });
+
+</script>
+
+</html>

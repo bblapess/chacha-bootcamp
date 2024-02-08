@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daftar - Chacha Bootcamp</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section id="login-daftar">
+        <div class="container-login-daftar">
+            <div class="card-daftar">
+                <div class="card-daftar-image">
+                    <img src="assets/img/logo-daftar.png" alt="Chacha Bootcamp" class="logo">
+                    <img src="assets/img/anak-daftar.png" alt="Daftar" class="illustration">
+                </div>
+                <div class="card-daftar-form">
+                    <div class="card-header">
+                        <h1>Pendaftaran Akun</h1>
+                    </div>
+                    <form class="form">
+                        <div class="form-group">
+                            <label class="required" for="nama">Nama Lengkap</label>
+                            <input type="text" id="nama">
+                        </div>
+                        <div class="form-group">
+                            <label class="required" for="email">Alamat Email</label>
+                            <input type="text" id="email">
+                        </div>
+                        <div class="form-group">
+                            <label class="required" for="password">Password</label>
+                            <input type="password" id="password">
+                            <i class="far fa-eye-slash" id="togglePassword"></i>
+                        </div>
+                        <div class="form-group">
+                            <label class="required" for="konfirmasi-password">Konfirmasi Password</label>
+                            <input type="password" id="konfirmasi-password">
+                            <i class="far fa-eye-slash" id="toggleConfirmPassword"></i>
+                        </div>
+                        <div class="additional">
+                            <div class="form-checkbox">
+                                <input type="checkbox" id="remember" name="remember">
+                                <label for="remember">Saya telah membaca dan menyetujui Ketentuan Layanan dan Kebijakan
+                                    pribadi</label>
+                            </div>
+                        </div>
+                        <a href="login.html" class="button-daftar">Daftar Akun</a>
+                        <div class="platform-login">
+                            <div class="login-with"><img src="assets/img/icon/platform-google.png"> Daftar dengan Google
+                            </div>
+                            <div class="login-with"><img src="assets/img/icon/platform-facebook.png"> Daftar dengan
+                                Facebook
+                            </div>
+                        </div>
+                        <p>Sudah mempunyai Akun? <a href="login.html" style="color: #338CD8;">Masuk</a></p>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script>
+    const togglePassword = document.querySelector("#togglePassword");
+    const toggleConfirmPassword = document.querySelector("#toggleConfirmPassword");
+    const confimPassword = document.querySelector("#konfirmasi-password");
+    const password = document.querySelector("#password");
+
+    togglePassword.addEventListener("click", function () {
+        // toggle the type attribute
+        const type =
+            password.getAttribute("type") === "password" ? "text" : "password";
+        password.setAttribute("type", type);
+
+        // toggle the icon
+        this.classList.toggle("fa-eye-slash");
+        this.classList.toggle("fa-eye");
+    });
+
+    toggleConfirmPassword.addEventListener("click", function () {
+        // toggle the type attribute
+        const type =
+            confimPassword.getAttribute("type") === "password" ? "text" : "password";
+        confimPassword.setAttribute("type", type);
+
+        // toggle the icon
+        this.classList.toggle("fa-eye-slash");
+        this.classList.toggle("fa-eye");
+    });
+
+    // prevent form submit
+    const form = document.querySelector("form");
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+    });
+</script>
+
+</html>

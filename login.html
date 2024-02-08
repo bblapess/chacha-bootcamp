@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login - Chacha Bootcamp</title>
 
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
@@ -15,7 +15,7 @@
 <body>
     <section id="login-daftar">
         <div class="container-login-daftar">
-            <div class="card-login-daftar">
+            <div class="card-login">
                 <div class="card-header">
                     <h1>Masuk ke Akun</h1>
                     <h3>Yuk Lanjutin belajar kamu di Chaha</h3>
@@ -28,7 +28,7 @@
                     <div class="form-group">
                         <label class="required" for="password">Password</label>
                         <input type="password" id="password">
-                        <!-- <i class="far fa-eye" id="togglePassword"></i> -->
+                        <i class="far fa-eye-slash" id="togglePassword"></i>
                     </div>
                     <div class="additional">
                         <div class="form-checkbox">
@@ -38,8 +38,8 @@
                         <p>Lupa password?</p>
                     </div>
                     <div class="form-button">
-                        <a href="index.html" class="button-login">Login</a>
-                        <a href="#" class="button-daftar">Daftar</a>
+                        <a href="menu-pembelajaran.html" class="button-login">Login</a>
+                        <a href="daftar.html" class="button-daftar">Daftar</a>
                     </div>
                 </form>
             </div>
@@ -47,6 +47,27 @@
     </section>
 </body>
 <script src="/assets/js/script.js"></script>
+<script>
+    const togglePassword = document.querySelector("#togglePassword");
+    const password = document.querySelector("#password");
+
+    togglePassword.addEventListener("click", function () {
+        // toggle the type attribute
+        const type =
+            password.getAttribute("type") === "password" ? "text" : "password";
+        password.setAttribute("type", type);
+
+        // toggle the icon
+        this.classList.toggle("fa-eye-slash");
+        this.classList.toggle("fa-eye");
+    });
+
+    // prevent form submit
+    const form = document.querySelector("form");
+    form.addEventListener("submit", function (e) {
+        e.preventDefault();
+    });
+</script>
 
 
 </html>

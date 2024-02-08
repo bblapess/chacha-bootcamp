@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Transaksi - Chacha Bootcamp</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body style="height: 100vh;" id="bodyTransaksi">
+    <section id="pageTransaksi">
+        <div class="container">
+            <div class="page-header">
+                <h2 class="page-title">Pembayaran</h2>
+            </div>
+            <div class="detail-transaksi">
+                <table>
+                    <tr>
+                        <td>Pilihan Course</td>
+                        <td style="text-align: end;">Matematika Kelas 6 SD</td>
+                    </tr>
+                    <tr>
+                        <td>Bahasa Indonesia</td>
+                        <td style="text-align: end;">Rp 399.000</td>
+                    </tr>
+                    <tr>
+                        <td>Matematika</td>
+                        <td style="text-align: end;">Rp 399.000</td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td style="text-align: end;">&nbsp;</td>
+                    </tr>
+                    <tr>
+                        <td>Matematika</td>
+                        <td style="text-align: end;">Rp 798.000</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="payment">
+                <h3>Memilih Pembayaran Melalui Bank</h3>
+                <button class="button-bank" id="btnBank" onclick="toggleBankList()">Pilih Bank <img
+                        src="assets/img/icon/icon-down.svg"></button>
+            </div>
+            <div class="bank" id="bankList">
+                <!-- <div class="bank-item">
+                    <div class="bank-item-brand">
+                        <img src="assets/img/bank-bri.png" alt="BRI">
+                        <h3>BRI</h3>
+                    </div>
+                    <div class="bank-item-radio">
+                        <input type="radio" id="bri" name="bank" value="bri" onclick="showBayarButton('label-bri')">
+                        <label for="bri" id="label-bri">Pilih</label>
+                    </div>
+                </div>
+
+                <div class="bank-item">
+                    <div class="bank-item-brand">
+                        <img src="assets/img/bank-bca.png" alt="BCA">
+                        <h3>BCA</h3>
+                    </div>
+                    <div class="bank-item-radio">
+                        <input type="radio" id="bca" name="bank" value="bca" onclick="showBayarButton('label-bca')">
+                        <label for="bca" id="label-bca">Pilih</label>
+                    </div>
+                </div>
+                <div class="bank-item">
+                    <div class="bank-item-brand">
+                        <img src="assets/img/bank-bni.png" alt="BNI">
+                        <h3>BNI</h3>
+                    </div>
+                    <div class="bank-item-radio">
+                        <input type="radio" id="bni" name="bank" value="bni" onclick="showBayarButton('label-bni')">
+                        <label for="bni" id="label-bni">Pilih</label>
+                    </div>
+                </div> -->
+
+                <div class="bank-item">
+                    <div class="bank-item-brand">
+                        <img src="assets/img/bank-bri.png" alt="BRI">
+                        <h3>BRI</h3>
+                    </div>
+                    <div class="bank-item-radio">
+                        <input type="radio" id="bri" name="bank" value="bri" onclick="showBayarButton()">
+                        <label for="bri" id="label-bri">Pilih</label>
+                    </div>
+                </div>
+                <div class="bank-item">
+                    <div class="bank-item-brand">
+                        <img src="assets/img/bank-bca.png" alt="BCA">
+                        <h3>BCA</h3>
+                    </div>
+                    <div class="bank-item-radio">
+                        <input type="radio" id="bca" name="bank" value="bca" onclick="showBayarButton()">
+                        <label for="bca" id="label-bca">Pilih</label>
+                    </div>
+                </div>
+                <div class="bank-item">
+                    <div class="bank-item-brand">
+                        <img src="assets/img/bank-bni.png" alt="BNI">
+                        <h3>BNI</h3>
+                    </div>
+                    <div class="bank-item-radio">
+                        <input type="radio" id="bni" name="bank" value="bni" onclick="showBayarButton()">
+                        <label for="bni" id="label-bni">Pilih</label>
+                    </div>
+                </div>
+            </div>
+            <div class="bayar" id="btnBayar">
+                <a href="pembelajaran.html" class="button-large">BAYAR SEKARANG</a>
+            </div>
+    </section>
+</body>
+<script>
+    const body = document.getElementById("bodyTransaksi");
+
+    function toggleBankList() {
+        var bankList = document.getElementById("bankList");
+        var btnBayar = document.getElementById("btnBayar");
+
+        if (bankList.style.display === "flex") {
+            body.style.height = "100vh";
+            bankList.style.display = "none";
+        } else {
+            body.style.height = "100%";
+            bankList.style.display = "flex";
+        }
+    }
+
+    function showBayarButton() {
+        var btnBayar = document.getElementById("btnBayar");
+        btnBayar.style.display = "flex";
+    }
+
+    // function showBayarButton(labelId) {
+    //     var btnBayar = document.getElementById("btnBayar");
+    //     btnBayar.style.display = "flex";
+
+    //     // Mengubah teks label menjadi "Dipilih" saat radio button dipilih
+    //     var labelElement = document.getElementById(labelId);
+    //     if (labelElement) {
+    //         labelElement.textContent = "Dipilih";
+    //     }
+    // }
+
+</script>
+
+</html>
