@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Halaman Ujian - Chacha Bootcamp</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section id="pageUjian">
+        <div class="container">
+            <div class="ujian-body">
+                <div class="card-soal">
+                    <div class="card-soal-header">
+                        <h3>Matematika</h3>
+                        <div class="time-count">
+                            00:00:00
+                        </div>
+                    </div>
+                    <div class="card-soal-body">
+                        <ol>
+                            <li>
+                                Ibu Edo mempunyai persediaan 2,5 kg gula di rumah. Hari ini Ibu membeli lagi 1/4 kg gula
+                                di warung dekat rumah untuk tambahan membuat pesanan kue. Berapa kg jumlah gula
+                                keseluruhan?
+                            </li>
+                        </ol>
+                        <div class="radio-jawaban">
+                            <input type="radio" id="a" name="jawaban" value="a">
+                            <label for="a">2,25 kg</label>
+                        </div>
+                        <div class="radio-jawaban">
+                            <input type="radio" id="a" name="jawaban" value="a">
+                            <label for="a">2,50 kg</label>
+                        </div>
+                        <div class="radio-jawaban">
+                            <input type="radio" id="a" name="jawaban" value="a">
+                            <label for="a">2,75 kg</label>
+                        </div>
+                        <div class="radio-jawaban">
+                            <input type="radio" id="a" name="jawaban" value="a">
+                            <label for="a">3,00 kg</label>
+                        </div>
+                        <div class="card-soal-footer">
+                            <a href="#" class="back" style="padding: 1rem 0;">
+                                <img src="assets/img/icon/icon-right.svg" alt="Back"> Sebelumnya</a>
+                            <a href="#" class="next" style="padding: 1rem 0;">
+                                Selanjutnya <img src="assets/img/icon/icon-right.svg" alt="Next"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="card-nomor">
+                    <div class="card-nomor-body">
+                        <a href="#" class="nomor">
+                            1
+                        </a>
+                        <a href="#" class="nomor">
+                            2
+                        </a>
+                        <a href="#" class="nomor">
+                            3
+                        </a>
+                        <a href="#" class="nomor">
+                            4
+                        </a>
+                        <a href="#" class="nomor">
+                            5
+                        </a>
+                        <a href="#" class="nomor">
+                            6
+                        </a>
+                        <a href="#" class="nomor">
+                            7
+                        </a>
+                        <a href="#" class="nomor">
+                            8
+                        </a>
+                        <a href="#" class="nomor">
+                            9
+                        </a>
+                        <a href="#" class="nomor">
+                            10
+                        </a>
+                        <a href="#" class="nomor">
+                            11
+                        </a>
+                        <a href="#" class="nomor">
+                            12
+                        </a>
+                        <a href="#" class="nomor">
+                            13
+                        </a>
+                        <a href="#" class="nomor">
+                            14
+                        </a>
+                        <a href="#" class="nomor">
+                            15
+                        </a>
+                        <a href="#" class="nomor">
+                            16
+                        </a>
+                        <a href="#" class="nomor">
+                            17
+                        </a>
+                        <a href="#" class="nomor">
+                            18
+                        </a>
+                        <a href="#" class="nomor">
+                            19
+                        </a>
+                        <a href="#" class="nomor">
+                            20
+                        </a>
+                    </div>
+                    <div class="selesai">
+                        <button id="btnSelesai" class="button-selesai">Selesai</button>
+                    </div>
+                </div>
+            </div>
+            <!-- The Modal -->
+            <div id="modalUjian" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="assets/img/icon/icon-success.svg" alt="Success">
+                        <h2>Ujian Berhasil</h2>
+                        <h3>Ke Halaman Sertifikat</h3>
+                    </div>
+                    <div class="modal-button">
+                        <a href="sertifikat.html" class="button-large">Melihat Sertifikat</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById("modalUjian");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("btnSelesai");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+</html>
