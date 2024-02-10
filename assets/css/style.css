@@ -459,6 +459,26 @@ footer {
     background-repeat: no-repeat;
 }
 
+#penawaran .container {
+    padding: 6rem 7rem;
+}
+
+#penawaranDetail {
+    background-image: url("../img/bg/bg-3.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#penawaranDetail .container {
+    gap: 1.5rem;
+}
+
+#penawaranDetail .page-header {
+    align-items: center;
+}
+
 @media screen and (max-width: 1024px) {
     h1 {
         font-size: calc(3.5rem * 0.9);
@@ -1108,7 +1128,7 @@ label.required::after {
     background-color: transparent;
 }
 
-.form-group #togglePassword {
+.card-login .form-group #togglePassword {
     position: absolute;
     top: 75%;
     left: 96%;
@@ -1116,10 +1136,18 @@ label.required::after {
     transform: translateY(-50%);
 }
 
+.form-group #togglePassword {
+    position: absolute;
+    top: 73%;
+    left: 95%;
+    cursor: pointer;
+    transform: translateY(-50%);
+}
+
 .form-group #toggleConfirmPassword {
     position: absolute;
-    top: 75%;
-    left: 96%;
+    top: 73%;
+    left: 95%;
     cursor: pointer;
     transform: translateY(-50%);
 }
@@ -1131,15 +1159,14 @@ label.required::after {
     align-items: center;
 }
 
-.additional .form-checkbox {
+.form .additional .form-checkbox {
     display: flex;
     align-items: center;
     gap: 0.5rem;
     flex-shrink: 0;
-    width: 100%;
 }
 
-.form-checkbox input[type="checkbox"] {
+.form .additional .form-checkbox input[type="checkbox"] {
     appearance: none;
     -webkit-appearance: none;
     display: flex;
@@ -1150,7 +1177,7 @@ label.required::after {
     border-radius: 0.25rem;
 }
 
-.form-checkbox input[type="checkbox"]::before {
+.form .additional .form-checkbox input[type="checkbox"]::before {
     content: "";
     width: 1rem;
     height: 1rem;
@@ -1159,11 +1186,11 @@ label.required::after {
     background-color: var(--silver);
 }
 
-.form-checkbox input[type="checkbox"]:checked::before {
+.form .additional .form-checkbox input[type="checkbox"]:checked::before {
     transform: scale(1);
 }
 
-.form-checkbox input[type="checkbox"]:hover {
+.form .additional .form-checkbox input[type="checkbox"]:hover {
     color: black;
 }
 
@@ -1242,6 +1269,8 @@ label.required::after {
 
 .card-mapel .card-mapel-image img {
     width: 100%;
+    border-radius: 16px;
+    border: 2px solid var(--crusta);
 }
 
 .page-header {
@@ -1481,6 +1510,7 @@ table td {
 }
 
 .button-large {
+    cursor: pointer;
     display: flex;
     padding: 1.5rem 2rem;
     justify-content: center;
@@ -1626,6 +1656,10 @@ table td {
     background: var(--selective-yellow);
 }
 
+.card-learn-history img {
+    border-radius: 16px;
+}
+
 .card-learn-history-body {
     width: 100%;
     display: flex;
@@ -1698,6 +1732,11 @@ table td {
     align-items: center;
 }
 
+.materi-item-body img {
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
 .materi-item-content {
     display: flex;
     flex-direction: column;
@@ -1735,6 +1774,8 @@ table td {
 .isi-materi-header-info .info-img {
     width: 76px;
     height: auto;
+    border-radius: 8px;
+    border: 1px solid black;
 }
 
 .isi-materi-img {
@@ -2142,7 +2183,218 @@ a.next img {
     line-height: normal;
 }
 
-/* Modal Daftar */
+/* Page Profile */
+
+#pageProfile {
+    background-image: url("../img/bg/bg-3.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+#pageProfile .container {
+    gap: 1.5rem;
+}
+
+.profile-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.profile-body {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    padding: 1.5rem;
+    border: 1px solid #000;
+    align-items: center;
+}
+
+.profile-body img {
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.profile-menu {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.5rem;
+    padding: 1.5rem;
+    border: 1px solid #000;
+}
+
+.profile-menu-item {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1.5rem;
+    border-bottom: 1px solid #000;
+    padding: 0.75rem;
+
+    color: black;
+    /* Poppins/H3 */
+    font-family: Poppins;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+/* Page Edit Profile */
+
+#pageEditProfile {
+    background-image: url("../img/bg/bg-3.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+#pageEditProfile .container {
+    gap: 1.5rem;
+}
+
+.profile-edit {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    height: 100%;
+}
+
+.profile-edit-sidebar {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+}
+
+.profile-edit-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 2rem 1rem;
+    border: 1px solid #000;
+}
+
+.profile-edit-content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    padding: 1rem;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #000;
+}
+
+.foto-profil {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 90%;
+}
+
+.foto-profil-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.foto-profil-header img {
+    border-radius: 20px;
+    border: 1px solid black;
+}
+
+.foto-profil-header button {
+    cursor: pointer;
+
+    display: flex;
+    padding: 1rem 2rem;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background-color: transparent;
+    border: 1.5px solid black;
+
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 32px;
+    /* 228.571% */
+    letter-spacing: 0.4px;
+    color: black;
+}
+
+.foto-profil-body p {
+    color: black;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 32px */
+    letter-spacing: -0.5px;
+}
+
+.foto-profil-body ol li {
+    margin-left: 1.5rem;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.button-edit-profile {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.data-pribadi {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 90%;
+}
+
+.form-data-pribadi {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 0.5rem;
+}
+
+.form-data-pribadi-group {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.form-data-pribadi-group input,
+.form-data-pribadi-group select,
+.form-data-pribadi-group textarea {
+    width: 100%;
+    border-radius: 8px;
+    border: 1px solid #000;
+    padding: 0.5rem 1rem;
+
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 160%;
+    /* 32px */
+    letter-spacing: -0.5px;
+}
+
+/* Modal */
 
 /* The Modal (background) */
 .modal {
@@ -2243,14 +2495,16 @@ a.next img {
 #modalDaftar .modal-header,
 #modalBayar .modal-header,
 #modalUjian .modal-header,
-#modalNilai .modal-header {
+#modalNilai .modal-header,
+#pageEditProfile .modal-header {
     background-color: transparent;
 }
 
 #modalDaftar .modal-content,
 #modalBayar .modal-content,
 #modalUjian .modal-content,
-#modalNilai .modal-content {
+#modalNilai .modal-content,
+#pageEditProfile .modal-content {
     width: 50%;
     background-image: url("../img/bg/bg-3.png");
     padding: 2rem;
@@ -2259,7 +2513,8 @@ a.next img {
 #modalDaftar .modal-body,
 #modalBayar .modal-body,
 #modalUjian .modal-body,
-#modalNilai .modal-body {
+#modalNilai .modal-body,
+#pageEditProfile .modal-body {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2270,7 +2525,8 @@ a.next img {
 #modalDaftar .modal-body h2,
 #modalBayar .modal-body h2,
 #modalUjian .modal-body h2,
-#modalNilai .modal-body h2 {
+#modalNilai .modal-body h2,
+#pageEditProfile .modal-body h2 {
     color: var(--bronze);
 
     font-size: 35px;
@@ -2282,14 +2538,16 @@ a.next img {
 #modalDaftar .modal-body img,
 #modalBayar .modal-body img,
 #modalUjian .modal-body img,
-#modalNilai .modal-body img {
+#modalNilai .modal-body img,
+#pageEditProfile .modal-body img {
     width: 240px;
 }
 
 #modalDaftar .modal-button,
 #modalBayar .modal-button,
 #modalUjian .modal-button,
-#modalNilai .modal-button {
+#modalNilai .modal-button,
+#pageEditProfile .modal-button {
     display: flex;
     justify-content: center;
 }
