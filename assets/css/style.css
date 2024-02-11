@@ -80,6 +80,7 @@ header {
 
 header.scrolled {
     background: #fff;
+    padding: 1rem 7rem !important;
 }
 
 .navbar {
@@ -450,6 +451,7 @@ footer {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    padding-top: 2.5rem;
 }
 
 #penawaran {
@@ -457,6 +459,7 @@ footer {
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
+    padding-top: 2.5rem;
 }
 
 #penawaran .container {

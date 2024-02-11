@@ -28,12 +28,16 @@ window.addEventListener("resize", function () {
 	}
 });
 
+const navbar = document.querySelector("nav");
 const header = document.querySelector("header");
 
 window.addEventListener("scroll", () => {
 	if (window.scrollY > 0) {
-		header.classList.add("scrolled");
+		navbar.style.padding = "1rem 7rem";
+		header.style.backgroundColor = "#fff";
+		// navbar.classList.add("scrolled");
 	} else {
-		header.classList.remove("scrolled");
+		header.style.backgroundColor = "transparent";
+		navbar.style.padding = "4rem 7rem";
 	}
 });
