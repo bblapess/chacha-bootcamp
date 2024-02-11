@@ -459,6 +459,7 @@ footer {
     background-repeat: no-repeat;
 }
 
+<<<<<<< HEAD
 #penawaran .container {
     padding: 6rem 7rem;
 }
@@ -480,6 +481,8 @@ footer {
     align-items: center;
 }
 
+=======
+>>>>>>> parent of 19dc7e0 (update: profile setting, fix all pages)
 @media screen and (max-width: 1024px) {
     h1 {
         font-size: calc(3.5rem * 0.9);
@@ -1129,7 +1132,7 @@ label.required::after {
     background-color: transparent;
 }
 
-.card-login .form-group #togglePassword {
+.form-group #togglePassword {
     position: absolute;
     top: 75%;
     left: 96%;
@@ -1137,18 +1140,10 @@ label.required::after {
     transform: translateY(-50%);
 }
 
-.form-group #togglePassword {
-    position: absolute;
-    top: 73%;
-    left: 95%;
-    cursor: pointer;
-    transform: translateY(-50%);
-}
-
 .form-group #toggleConfirmPassword {
     position: absolute;
-    top: 73%;
-    left: 95%;
+    top: 75%;
+    left: 96%;
     cursor: pointer;
     transform: translateY(-50%);
 }
@@ -1160,14 +1155,15 @@ label.required::after {
     align-items: center;
 }
 
-.form .additional .form-checkbox {
+.additional .form-checkbox {
     display: flex;
     align-items: center;
     gap: 0.5rem;
     flex-shrink: 0;
+    width: 100%;
 }
 
-.form .additional .form-checkbox input[type="checkbox"] {
+.form-checkbox input[type="checkbox"] {
     appearance: none;
     -webkit-appearance: none;
     display: flex;
@@ -1178,7 +1174,7 @@ label.required::after {
     border-radius: 0.25rem;
 }
 
-.form .additional .form-checkbox input[type="checkbox"]::before {
+.form-checkbox input[type="checkbox"]::before {
     content: "";
     width: 1rem;
     height: 1rem;
@@ -1187,11 +1183,11 @@ label.required::after {
     background-color: var(--silver);
 }
 
-.form .additional .form-checkbox input[type="checkbox"]:checked::before {
+.form-checkbox input[type="checkbox"]:checked::before {
     transform: scale(1);
 }
 
-.form .additional .form-checkbox input[type="checkbox"]:hover {
+.form-checkbox input[type="checkbox"]:hover {
     color: black;
 }
 
@@ -1271,8 +1267,6 @@ label.required::after {
 
 .card-mapel .card-mapel-image img {
     width: 100%;
-    border-radius: 16px;
-    border: 2px solid var(--crusta);
 }
 
 .page-header {
@@ -1515,7 +1509,6 @@ table td {
 }
 
 .button-large {
-    cursor: pointer;
     display: flex;
     padding: 1.5rem 2rem;
     justify-content: center;
@@ -1662,10 +1655,6 @@ table td {
     background: var(--selective-yellow);
 }
 
-.card-learn-history img {
-    border-radius: 16px;
-}
-
 .card-learn-history-body {
     width: 100%;
     display: flex;
@@ -1739,11 +1728,6 @@ table td {
     align-items: center;
 }
 
-.materi-item-body img {
-    border-radius: 20px;
-    border: 1px solid black;
-}
-
 .materi-item-content {
     display: flex;
     flex-direction: column;
@@ -1782,8 +1766,6 @@ table td {
 .isi-materi-header-info .info-img {
     width: 76px;
     height: auto;
-    border-radius: 8px;
-    border: 1px solid black;
 }
 
 .isi-materi-img {
@@ -2192,6 +2174,7 @@ a.next img {
     line-height: normal;
 }
 
+<<<<<<< HEAD
 /* Page Profile */
 
 #pageProfile {
@@ -2404,6 +2387,9 @@ a.next img {
 }
 
 /* Modal */
+=======
+/* Modal Daftar */
+>>>>>>> parent of 19dc7e0 (update: profile setting, fix all pages)
 
 /* The Modal (background) */
 .modal {
@@ -2504,16 +2490,14 @@ a.next img {
 #modalDaftar .modal-header,
 #modalBayar .modal-header,
 #modalUjian .modal-header,
-#modalNilai .modal-header,
-#pageEditProfile .modal-header {
+#modalNilai .modal-header {
     background-color: transparent;
 }
 
 #modalDaftar .modal-content,
 #modalBayar .modal-content,
 #modalUjian .modal-content,
-#modalNilai .modal-content,
-#pageEditProfile .modal-content {
+#modalNilai .modal-content {
     width: 50%;
     background-image: url("../img/bg/bg-3.png");
     padding: 2rem;
@@ -2522,8 +2506,7 @@ a.next img {
 #modalDaftar .modal-body,
 #modalBayar .modal-body,
 #modalUjian .modal-body,
-#modalNilai .modal-body,
-#pageEditProfile .modal-body {
+#modalNilai .modal-body {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -2534,8 +2517,7 @@ a.next img {
 #modalDaftar .modal-body h2,
 #modalBayar .modal-body h2,
 #modalUjian .modal-body h2,
-#modalNilai .modal-body h2,
-#pageEditProfile .modal-body h2 {
+#modalNilai .modal-body h2 {
     color: var(--bronze);
 
     font-size: 35px;
@@ -2547,16 +2529,14 @@ a.next img {
 #modalDaftar .modal-body img,
 #modalBayar .modal-body img,
 #modalUjian .modal-body img,
-#modalNilai .modal-body img,
-#pageEditProfile .modal-body img {
+#modalNilai .modal-body img {
     width: 240px;
 }
 
 #modalDaftar .modal-button,
 #modalBayar .modal-button,
 #modalUjian .modal-button,
-#modalNilai .modal-button,
-#pageEditProfile .modal-button {
+#modalNilai .modal-button {
     display: flex;
     justify-content: center;
 }
