@@ -1243,11 +1243,15 @@ label.required::after {
 
 /* Page Menu Pembelajaran */
 
-#pageMenu {
+body#pageMenu,
+html #pageMenu {
+    min-height: 100%;
+}
+
+body#pageMenu {
     background-image: url("../img/bg/bg-3.png");
-    background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
 }
 
@@ -1309,11 +1313,15 @@ label.required::after {
 
 /* Page Pemilihan Kelas */
 
-#pagePemilihan {
+body#pagePemilihan,
+html #pagePemilihan {
+    min-height: 100%;
+}
+
+body#pagePemilihan {
     background-image: url("../img/bg/bg-3.png");
-    background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
 }
 
@@ -1361,13 +1369,16 @@ label.required::after {
 
 /* Page Detail Kelas */
 
-#pageDetailKelas {
+body#pageDetailKelas,
+html #pageDetailKelas {
+    min-height: 100%;
+}
+
+body#pageDetailKelas {
     background-image: url("../img/bg/bg-3.png");
-    background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
-    list-style: none;
 }
 
 #pageDetailKelas ul li {
@@ -1423,13 +1434,16 @@ img.card-detail-image {
 
 /* Page Transaksi */
 
-#pageTransaksi {
+body#pageTransaksi,
+html #pageTransaksi {
+    min-height: 100%;
+}
+
+body#pageTransaksi {
     background-image: url("../img/bg/bg-3.png");
-    background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
-    height: 100%;
 }
 
 #pageTransaksi .container {
@@ -1568,14 +1582,16 @@ table td {
 
 /* Page Pembelajaran Aktif */
 
-#pagePembelajaran {
+body#pagePembelajaran,
+html #pagePembelajaran {
+    min-height: 100%;
+}
+
+body#pagePembelajaran {
     background-image: url("../img/bg/bg-3.png");
-    background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
-    height: 100%;
-    list-style: none;
 }
 
 #pagePembelajaran ul li {
@@ -1694,11 +1710,15 @@ table td {
 
 /* Page Materi Pembelajaran */
 
-#pageMateri {
+body#pageMateri,
+html #pageMateri {
+    min-height: 100%;
+}
+
+body#pageMateri {
     background-image: url("../img/bg/bg-3.png");
-    background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
 }
 
@@ -1746,11 +1766,15 @@ table td {
 
 /* Page Isi Materi */
 
-#isiMateri {
+body#isiMateri,
+html #isiMateri {
+    min-height: 100%;
+}
+
+body#isiMateri {
     background-image: url("../img/bg/bg-3.png");
-    background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
 }
 
@@ -1868,13 +1892,16 @@ a.next img {
     width: auto;
 }
 
-#pageEvaluasiPembelajaran {
+body#pageEvaluasiPembelajaran,
+html #pageEvaluasiPembelajaran {
+    min-height: 100%;
+}
+
+body#pageEvaluasiPembelajaran {
     background-image: url("../img/bg/bg-3.png");
-    background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
-    height: 100vh;
 }
 
 #pageEvaluasiPembelajaran .container {
@@ -1914,13 +1941,16 @@ a.next img {
 
 /* Page Ujian */
 
-#pageUjian {
+body#pageUjian,
+html #pageUjian {
+    min-height: 100%;
+}
+
+body#pageUjian {
     background-image: url("../img/bg/bg-3.png");
-    background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
-    height: 100vh;
 }
 
 #pageUjian .container {
@@ -2102,11 +2132,15 @@ a.next img {
 
 /* Sertifikat */
 
-#pageSertifikat {
+body#pageSertifikat,
+html #pageSertifikat {
+    min-height: 100%;
+}
+
+body#pageSertifikat {
     background-image: url("../img/bg/bg-3.png");
-    background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
 }
 
@@ -2184,14 +2218,17 @@ a.next img {
 }
 
 /* Page Profile */
+body#pageProfile,
+html #pageProfile {
+    min-height: 100%;
+}
 
-#pageProfile {
+body#pageProfile {
     background-image: url("../img/bg/bg-3.png");
-    background-size: cover;
-    background-position: center;
     background-repeat: no-repeat;
+    background-size: cover;
     background-attachment: fixed;
-    height: 100vh;
+
 }
 
 #pageProfile .container {

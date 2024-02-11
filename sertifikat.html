@@ -12,41 +12,39 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
-    <section id="pageSertifikat">
-        <div class="container">
-            <div class="sertifikat">
-                <img src="assets/img/icon/icon-gold.png" alt="Sertifikat">
-                <div class="sertifikat-body">
-                    <h1>MATEMATIKA</h1>
-                    <h4>Ujian evaluasi materi untuk siswa bertujuan untuk mengukur pemahaman mereka terhadap konsep
-                        dasar
-                        dalam bahasa, matematika, dan pengetahuan umum yang telah diajarkan.</h4>
+<body id="pageSertifikat">
+    <div class="container">
+        <div class="sertifikat">
+            <img src="assets/img/icon/icon-gold.png" alt="Sertifikat">
+            <div class="sertifikat-body">
+                <h1>MATEMATIKA</h1>
+                <h4>Ujian evaluasi materi untuk siswa bertujuan untuk mengukur pemahaman mereka terhadap konsep
+                    dasar
+                    dalam bahasa, matematika, dan pengetahuan umum yang telah diajarkan.</h4>
+            </div>
+        </div>
+        <div class="sertifikat-button">
+            <button class="button-lihat" id="lihatNilai">Lihat Nilai Akhir</button>
+            <button class="button-download"><img src="assets/img/icon/icon-download-white.svg"> Download</button>
+        </div>
+        <!-- The Modal -->
+        <div id="modalNilai" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
                 </div>
-            </div>
-            <div class="sertifikat-button">
-                <button class="button-lihat" id="lihatNilai">Lihat Nilai Akhir</button>
-                <button class="button-download"><img src="assets/img/icon/icon-download-white.svg"> Download</button>
-            </div>
-            <!-- The Modal -->
-            <div id="modalNilai" class="modal">
-                <!-- Modal content -->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <span class="close">&times;</span>
-                    </div>
-                    <div class="modal-body">
-                        <img src="assets/img/icon/icon-gold.png" alt="Success">
-                        <h2>Anda Mendapatkan Sertifikat Gold</h2>
-                        <h3>Dengan Nilai : 880 Poin</h3>
-                    </div>
-                    <div class="modal-button">
-                        <a href="#" class="button-large">Download Sertifikat</a>
-                    </div>
+                <div class="modal-body">
+                    <img src="assets/img/icon/icon-gold.png" alt="Success">
+                    <h2>Anda Mendapatkan Sertifikat Gold</h2>
+                    <h3>Dengan Nilai : 880 Poin</h3>
+                </div>
+                <div class="modal-button">
+                    <a href="#" class="button-large">Download Sertifikat</a>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
 </body>
 
 <script>

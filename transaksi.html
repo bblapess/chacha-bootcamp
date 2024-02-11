@@ -12,8 +12,8 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body style="height: 100vh;" id="bodyTransaksi">
-    <section id="pageTransaksi">
+<body id="pageTransaksi">
+    <section>
         <div class="container">
             <div class="page-header">
                 <h2 class="page-title">Pembayaran</h2>
@@ -48,38 +48,6 @@
                         src="assets/img/icon/icon-down.svg"></button>
             </div>
             <div class="bank" id="bankList">
-                <!-- <div class="bank-item">
-                    <div class="bank-item-brand">
-                        <img src="assets/img/bank-bri.png" alt="BRI">
-                        <h3>BRI</h3>
-                    </div>
-                    <div class="bank-item-radio">
-                        <input type="radio" id="bri" name="bank" value="bri" onclick="showBayarButton('label-bri')">
-                        <label for="bri" id="label-bri">Pilih</label>
-                    </div>
-                </div>
-
-                <div class="bank-item">
-                    <div class="bank-item-brand">
-                        <img src="assets/img/bank-bca.png" alt="BCA">
-                        <h3>BCA</h3>
-                    </div>
-                    <div class="bank-item-radio">
-                        <input type="radio" id="bca" name="bank" value="bca" onclick="showBayarButton('label-bca')">
-                        <label for="bca" id="label-bca">Pilih</label>
-                    </div>
-                </div>
-                <div class="bank-item">
-                    <div class="bank-item-brand">
-                        <img src="assets/img/bank-bni.png" alt="BNI">
-                        <h3>BNI</h3>
-                    </div>
-                    <div class="bank-item-radio">
-                        <input type="radio" id="bni" name="bank" value="bni" onclick="showBayarButton('label-bni')">
-                        <label for="bni" id="label-bni">Pilih</label>
-                    </div>
-                </div> -->
-
                 <div class="bank-item">
                     <div class="bank-item-brand">
                         <img src="assets/img/bank-bri.png" alt="BRI">
@@ -134,17 +102,14 @@
     </section>
 </body>
 <script>
-    const body = document.getElementById("bodyTransaksi");
 
     function toggleBankList() {
         var bankList = document.getElementById("bankList");
         var btnBayar = document.getElementById("btnBayar");
 
         if (bankList.style.display === "flex") {
-            body.style.height = "100vh";
             bankList.style.display = "none";
         } else {
-            body.style.height = "100%";
             bankList.style.display = "flex";
         }
     }

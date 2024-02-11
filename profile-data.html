@@ -12,95 +12,93 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
-<body>
-    <section id="pageEditProfile">
-        <div class="container">
-            <div class="profile-header">
-                <a href="profile.html" class="back"><img src="assets/img/icon/icon-right.svg" alt="Back"> Kembali</a>
-            </div>
-            <div class="profile-edit">
-                <div class="profile-edit-sidebar">
-                    <div class="profile-body">
-                        <img src="assets/img/profile.png" alt="Profile">
-                        <div class="profile-info">
-                            <h3>Agus</h3>
-                            <p>SD Negeri 1 Purwokerto Wetan</p>
-                        </div>
-                    </div>
-                    <div class="profile-edit-menu">
-                        <a href="profile-foto.html" class="profile-menu-item">
-                            <img src="assets/img/icon/icon-profile.png" alt="Profile">
-                            Foto Profil
-                        </a>
-                        <a href="profile-data.html" class="profile-menu-item">
-                            <img src="assets/img/icon/icon-data-pribadi.png" alt="Data Pribadi">
-                            Data Pribadi
-                        </a>
-                        <a href="profile-password.html" class="profile-menu-item">
-                            <img src="assets/img/icon/icon-kata-sandi.png" alt="Kata Sandi">
-                            Kata Sandi
-                        </a>
-                        <a href="index.html" class="profile-menu-item">
-                            <img src="assets/img/icon/icon-logout.png" alt="Logout">
-                            Keluar
-                        </a>
+<body id="pageEditProfile">
+    <div class="container">
+        <div class="profile-header">
+            <a href="profile.html" class="back"><img src="assets/img/icon/icon-right.svg" alt="Back"> Kembali</a>
+        </div>
+        <div class="profile-edit">
+            <div class="profile-edit-sidebar">
+                <div class="profile-body">
+                    <img src="assets/img/profile.png" alt="Profile">
+                    <div class="profile-info">
+                        <h3>Agus</h3>
+                        <p>SD Negeri 1 Purwokerto Wetan</p>
                     </div>
                 </div>
-                <div class="profile-edit-content">
-                    <div class="data-pribadi" id="#dataPribadi">
-                        <form class="form-data-pribadi">
-                            <div class="form-data-pribadi-group">
-                                <label for="nama">Nama</label>
-                                <input type="text" id="nama" name="nama" placeholder="Nama" value="Agus Supriyanto">
-                            </div>
-                            <div class="form-data-pribadi-group">
-                                <label for="kelamin">Jenis Kelamin</label>
-                                <select name="kelamin" id="kelamin">
-                                    <option value="1">Laki-laki</option>
-                                    <option value="2">Perempuan</option>
-                                </select>
-                            </div>
-                            <div class="form-data-pribadi-group">
-                                <label for="email">E-mail</label>
-                                <input type="text" id="email" name="email" placeholder="Email" value="agus23@gmail.com">
-                            </div>
-                            <div class="form-data-pribadi-group">
-                                <label for="notelp">No Telepon</label>
-                                <input type="number" id="notelp" name="notelp" placeholder="notelp"
-                                    value="085227373767">
-                            </div>
-                            <div class="form-data-pribadi-group">
-                                <label for="alamat">Alamat</label>
-                                <textarea id="alamat" name="alamat"
-                                    placeholder="alamat">Jl. Jenderal Soedirman No. 1 Purwokerto </textarea>
-                            </div>
-                        </form>
-                        <div class="button-edit-profile">
-                            <button class="button-selesai" id="btnSimpan">Simpan</button>
-                            <a href="profile.html" class="button-selesai">Abaikan</a>
+                <div class="profile-edit-menu">
+                    <a href="profile-foto.html" class="profile-menu-item">
+                        <img src="assets/img/icon/icon-profile.png" alt="Profile">
+                        Foto Profil
+                    </a>
+                    <a href="profile-data.html" class="profile-menu-item">
+                        <img src="assets/img/icon/icon-data-pribadi.png" alt="Data Pribadi">
+                        Data Pribadi
+                    </a>
+                    <a href="profile-password.html" class="profile-menu-item">
+                        <img src="assets/img/icon/icon-kata-sandi.png" alt="Kata Sandi">
+                        Kata Sandi
+                    </a>
+                    <a href="index.html" class="profile-menu-item">
+                        <img src="assets/img/icon/icon-logout.png" alt="Logout">
+                        Keluar
+                    </a>
+                </div>
+            </div>
+            <div class="profile-edit-content">
+                <div class="data-pribadi" id="#dataPribadi">
+                    <form class="form-data-pribadi">
+                        <div class="form-data-pribadi-group">
+                            <label for="nama">Nama</label>
+                            <input type="text" id="nama" name="nama" placeholder="Nama" value="Agus Supriyanto">
                         </div>
+                        <div class="form-data-pribadi-group">
+                            <label for="kelamin">Jenis Kelamin</label>
+                            <select name="kelamin" id="kelamin">
+                                <option value="1">Laki-laki</option>
+                                <option value="2">Perempuan</option>
+                            </select>
+                        </div>
+                        <div class="form-data-pribadi-group">
+                            <label for="email">E-mail</label>
+                            <input type="text" id="email" name="email" placeholder="Email" value="agus23@gmail.com">
+                        </div>
+                        <div class="form-data-pribadi-group">
+                            <label for="notelp">No Telepon</label>
+                            <input type="number" id="notelp" name="notelp" placeholder="notelp" value="085227373767">
+                        </div>
+                        <div class="form-data-pribadi-group">
+                            <label for="alamat">Alamat</label>
+                            <textarea id="alamat" name="alamat"
+                                placeholder="alamat">Jl. Jenderal Soedirman No. 1 Purwokerto </textarea>
+                        </div>
+                    </form>
+                    <div class="button-edit-profile">
+                        <button class="button-selesai" id="btnSimpan">Simpan</button>
+                        <a href="profile.html" class="button-selesai">Abaikan</a>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <!-- The Modal -->
-            <div id="modalEdit" class="modal">
-                <!-- Modal content -->
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <span class="close">&times;</span>
-                    </div>
-                    <div class="modal-body">
-                        <img src="assets/img/icon/icon-success.svg" alt="Success">
-                        <h2>Data Berhasil Disimpanl</h2>
-                        <h3>Lanjut Ke Halaman Profil</h3>
-                    </div>
-                    <div class="modal-button">
-                        <a href="profile.html" class="button-large">Profil</a>
-                    </div>
+        <!-- The Modal -->
+        <div id="modalEdit" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <span class="close">&times;</span>
+                </div>
+                <div class="modal-body">
+                    <img src="assets/img/icon/icon-success.svg" alt="Success">
+                    <h2>Data Berhasil Disimpanl</h2>
+                    <h3>Lanjut Ke Halaman Profil</h3>
+                </div>
+                <div class="modal-button">
+                    <a href="profile.html" class="button-large">Profil</a>
                 </div>
             </div>
-    </section>
+        </div>
+    </div>
 </body>
 
 <script>
