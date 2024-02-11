@@ -459,8 +459,7 @@ footer {
     background-repeat: no-repeat;
 }
 
-<<<<<<< HEAD
-#penawaran .container {
+<<<<<<< HEAD #penawaran .container {
     padding: 6rem 7rem;
 }
 
@@ -469,8 +468,7 @@ footer {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
-    height: 100%;
+    background-attachment: fixed;
 }
 
 #penawaranDetail .container {
@@ -481,9 +479,7 @@ footer {
     align-items: center;
 }
 
-=======
->>>>>>> parent of 19dc7e0 (update: profile setting, fix all pages)
-@media screen and (max-width: 1024px) {
+=======>>>>>>>parent of 19dc7e0 (update: profile setting, fix all pages) @media screen and (max-width: 1024px) {
     h1 {
         font-size: calc(3.5rem * 0.9);
         font-weight: 700;
@@ -1245,8 +1241,7 @@ label.required::after {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
-    height: 100%;
+    background-attachment: fixed;
 }
 
 #pageMenu .container {
@@ -1310,8 +1305,7 @@ label.required::after {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
-    height: 100%;
+    background-attachment: fixed;
 }
 
 #pagePemilihan .container {
@@ -1363,8 +1357,7 @@ label.required::after {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
-    height: 100%;
+    background-attachment: fixed;
     list-style: none;
 }
 
@@ -1426,8 +1419,7 @@ img.card-detail-image {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
-    /* height: 100%; */
+    background-attachment: fixed;
     height: 100%;
 }
 
@@ -1571,10 +1563,9 @@ table td {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
-    /* height: 100%; */
-    list-style: none;
+    background-attachment: fixed;
     height: 100%;
+    list-style: none;
 }
 
 #pagePembelajaran ul li {
@@ -1694,8 +1685,7 @@ table td {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
-    height: 100%;
+    background-attachment: fixed;
 }
 
 #pageMateri .container {
@@ -1742,8 +1732,7 @@ table td {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
-    height: 100%;
+    background-attachment: fixed;
 }
 
 #isiMateri .container {
@@ -2097,8 +2086,7 @@ a.next img {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    /* background-attachment: fixed; */
-    height: 100%;
+    background-attachment: fixed;
 }
 
 #pageSertifikat .container {
@@ -2389,7 +2377,7 @@ a.next img {
 /* Modal */
 =======
 /* Modal Daftar */
->>>>>>> parent of 19dc7e0 (update: profile setting, fix all pages)
+>>>>>>>parent of 19dc7e0 (update: profile setting, fix all pages)
 
 /* The Modal (background) */
 .modal {
