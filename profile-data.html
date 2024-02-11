@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Chacha Bootcamp</title>
+
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+        integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section id="pageEditProfile">
+        <div class="container">
+            <div class="profile-header">
+                <a href="profile.html" class="back"><img src="assets/img/icon/icon-right.svg" alt="Back"> Kembali</a>
+            </div>
+            <div class="profile-edit">
+                <div class="profile-edit-sidebar">
+                    <div class="profile-body">
+                        <img src="assets/img/profile.png" alt="Profile">
+                        <div class="profile-info">
+                            <h3>Agus</h3>
+                            <p>SD Negeri 1 Purwokerto Wetan</p>
+                        </div>
+                    </div>
+                    <div class="profile-edit-menu">
+                        <a href="profile-foto.html" class="profile-menu-item">
+                            <img src="assets/img/icon/icon-profile.png" alt="Profile">
+                            Foto Profil
+                        </a>
+                        <a href="profile-data.html" class="profile-menu-item">
+                            <img src="assets/img/icon/icon-data-pribadi.png" alt="Data Pribadi">
+                            Data Pribadi
+                        </a>
+                        <a href="profile-password.html" class="profile-menu-item">
+                            <img src="assets/img/icon/icon-kata-sandi.png" alt="Kata Sandi">
+                            Kata Sandi
+                        </a>
+                        <a href="index.html" class="profile-menu-item">
+                            <img src="assets/img/icon/icon-logout.png" alt="Logout">
+                            Keluar
+                        </a>
+                    </div>
+                </div>
+                <div class="profile-edit-content">
+                    <div class="data-pribadi" id="#dataPribadi">
+                        <form class="form-data-pribadi">
+                            <div class="form-data-pribadi-group">
+                                <label for="nama">Nama</label>
+                                <input type="text" id="nama" name="nama" placeholder="Nama" value="Agus Supriyanto">
+                            </div>
+                            <div class="form-data-pribadi-group">
+                                <label for="kelamin">Jenis Kelamin</label>
+                                <select name="kelamin" id="kelamin">
+                                    <option value="1">Laki-laki</option>
+                                    <option value="2">Perempuan</option>
+                                </select>
+                            </div>
+                            <div class="form-data-pribadi-group">
+                                <label for="email">E-mail</label>
+                                <input type="text" id="email" name="email" placeholder="Email" value="agus23@gmail.com">
+                            </div>
+                            <div class="form-data-pribadi-group">
+                                <label for="notelp">No Telepon</label>
+                                <input type="number" id="notelp" name="notelp" placeholder="notelp"
+                                    value="085227373767">
+                            </div>
+                            <div class="form-data-pribadi-group">
+                                <label for="alamat">Alamat</label>
+                                <textarea id="alamat" name="alamat"
+                                    placeholder="alamat">Jl. Jenderal Soedirman No. 1 Purwokerto </textarea>
+                            </div>
+                        </form>
+                        <div class="button-edit-profile">
+                            <button class="button-selesai" id="btnSimpan">Simpan</button>
+                            <a href="profile.html" class="button-selesai">Abaikan</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- The Modal -->
+            <div id="modalEdit" class="modal">
+                <!-- Modal content -->
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span class="close">&times;</span>
+                    </div>
+                    <div class="modal-body">
+                        <img src="assets/img/icon/icon-success.svg" alt="Success">
+                        <h2>Data Berhasil Disimpanl</h2>
+                        <h3>Lanjut Ke Halaman Profil</h3>
+                    </div>
+                    <div class="modal-button">
+                        <a href="profile.html" class="button-large">Profil</a>
+                    </div>
+                </div>
+            </div>
+    </section>
+</body>
+
+<script>
+    // Get the modal
+    var modal = document.getElementById("modalEdit");
+
+    // Get the button that opens the modal
+    var btn = document.getElementById("btnSimpan");
+
+    // Get the <span> element that closes the modal
+    var span = document.getElementsByClassName("close")[0];
+
+    // When the user clicks the button, open the modal 
+    btn.onclick = function () {
+        modal.style.display = "block";
+    }
+
+    // When the user clicks on <span> (x), close the modal
+    span.onclick = function () {
+        modal.style.display = "none";
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    window.onclick = function (event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+</script>
+
+</html>
