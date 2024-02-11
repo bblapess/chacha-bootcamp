@@ -468,8 +468,8 @@ footer {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 100vh;
+    /* background-attachment: fixed; */
+    height: 100%;
 }
 
 #penawaranDetail .container {
@@ -1249,8 +1249,8 @@ label.required::after {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 100vh;
+    /* background-attachment: fixed; */
+    height: 100%;
 }
 
 #pageMenu .container {
@@ -1316,8 +1316,8 @@ label.required::after {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 100vh;
+    /* background-attachment: fixed; */
+    height: 100%;
 }
 
 #pagePemilihan .container {
@@ -1369,8 +1369,8 @@ label.required::after {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 100vh;
+    /* background-attachment: fixed; */
+    height: 100%;
     list-style: none;
 }
 
@@ -1432,9 +1432,9 @@ img.card-detail-image {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     /* height: 100%; */
-    height: 100vh;
+    height: 100%;
 }
 
 #pageTransaksi .container {
@@ -1578,10 +1578,10 @@ table td {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     /* height: 100%; */
     list-style: none;
-    height: 100vh;
+    height: 100%;
 }
 
 #pagePembelajaran ul li {
@@ -1705,8 +1705,8 @@ table td {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 100vh;
+    /* background-attachment: fixed; */
+    height: 100%;
 }
 
 #pageMateri .container {
@@ -1758,8 +1758,8 @@ table td {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 100vh;
+    /* background-attachment: fixed; */
+    height: 100%;
 }
 
 #isiMateri .container {
@@ -1829,7 +1829,7 @@ div.ujian {
 
 .ujian {
     background-image: url("../img/bg/bg-3.png");
-    background-attachment: fixed;
+    /* background-attachment: fixed; */
     background-position: bottom;
 
     display: flex;
@@ -1881,8 +1881,8 @@ a.next img {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 100vh;
+    /* background-attachment: fixed; */
+    height: 100%;
 }
 
 #pageEvaluasiPembelajaran .container {
@@ -1927,8 +1927,8 @@ a.next img {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 100vh;
+    /* background-attachment: fixed; */
+    height: 100%;
 }
 
 #pageUjian .container {
@@ -2115,8 +2115,8 @@ a.next img {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 100vh;
+    /* background-attachment: fixed; */
+    height: 100%;
 }
 
 #pageSertifikat .container {
@@ -2199,8 +2199,8 @@ a.next img {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 100vh;
+    /* background-attachment: fixed; */
+    height: 100%;
 }
 
 #pageProfile .container {
@@ -2260,8 +2260,8 @@ a.next img {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    height: 100vh;
+    /* background-attachment: fixed; */
+    height: 100%;
 }
 
 #pageEditProfile .container {
